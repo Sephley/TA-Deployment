@@ -29,7 +29,34 @@ variable "vm_template_name" {
   type = string
 }
 
-# SSH
+variable "vm_ram" {
+  type = string
+}
+
+variable "vm_cores" {
+  type = string
+}
+
+variable "vm_os_type" {
+  type = string
+}
+
+variable "vm_ip_config" {
+  type = string
+}
+
+variable "vm_agent_enabled" {
+  type = string
+}
+
+variable "vm_cloudinit_disk_name" {
+  type = string
+}
+
+variable "vm_storage_disk_name" {
+  type = string
+}
+
 variable "ssh_user" {
   type = string
   sensitive = true
@@ -50,7 +77,7 @@ variable "cf_zone_id" {
   sensitive = true
 }
 
-variable "cf_content" {
+variable "cf_record_content" {
   type = string
 }
 
